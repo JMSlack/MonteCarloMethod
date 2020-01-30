@@ -27,10 +27,6 @@ You will need the latest version of Visual Studio 2019.
 
 
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 Visual Studio 2019
