@@ -17,8 +17,8 @@ You will need the latest version of Visual Studio 2019.
 
 
 1. Open program.cs
-2. In the Main method, type in a value of iterations (ex. 100000)
-3. Press F5
+2. Press F5
+3. You will be prompted to enter a non negative integer value (Try 100000 to start, this will give a fast semi-accurate value)
 4. The program will display 2 values:
 	1. Your estimated value of Pi
 	2. The calculated difference between Pi and your estimated value of Pi.
