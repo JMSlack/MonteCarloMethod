@@ -44,7 +44,7 @@ namespace MonteCarloMethod
             double finalPi = (counterValue / iterationValue) * 4;
 
             Console.WriteLine(finalPi);
-            Console.WriteLine(Math.PI - finalPi);
+            Console.WriteLine(Math.Abs(Math.PI - finalPi));
         }
         static double Pythag((double dartX, double dartY) coordinates)
         {
