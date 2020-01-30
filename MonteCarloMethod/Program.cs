@@ -2,13 +2,46 @@
 using System;
 
 namespace MonteCarloMethod
-{
+{   class NegativeNumberException : Exception
+    {
+
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            var maxIters = 100000;
+            var maxIters = 0;
+            var validInput = false;
+            do
+            {
+                try
+                {
+                    Console.Write("Enter Number of Iterations: ");
+                    maxIters = int.Parse(Console.ReadLine());
+                    if (maxIters > 0)
+                    {
+                        validInput = true;
+                    }
+                    else
+                    {
+                        throw new NegativeNumberException(); 
+                    }
+                }
+                catch (FormatException ex)
+                {
+                    Console.WriteLine("Invalid Input");
+                }
+                catch (NegativeNumberException ex)
+                {
+                    Console.WriteLine("No Negative Numbers");
+                }
+            
+
+            } while (!validInput);
+
+ 
             RunEngine(maxIters);
+
         }
 
         private static void RunEngine(int maxIters)
