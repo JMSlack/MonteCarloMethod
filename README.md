@@ -1,7 +1,7 @@
 # Monte Carlo Method
 
 Using the Monte Carlo Method, this console application estimates the value of Pi. Simulates throwing darts at a single quadrant of a 
-dart board prodicing random X,Y coordinates.
+dart board producing random X,Y coordinates.
 
 ## Getting Started
 
